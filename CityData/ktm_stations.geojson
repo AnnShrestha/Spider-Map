@@ -1,0 +1,1461 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3537169,
+          27.7006099
+        ]
+      },
+      "properties": {
+        "name": "Airport Bus Station",
+        "osm_id": "('node', 31147572)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3095996,
+          27.7188423
+        ]
+      },
+      "properties": {
+        "name": "Sorhakhutte",
+        "osm_id": "('node', 268116939)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3139878,
+          27.6997042
+        ]
+      },
+      "properties": {
+        "name": "Station 3",
+        "osm_id": "('node', 724363694)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2986117,
+          27.6849132
+        ]
+      },
+      "properties": {
+        "name": "Balkhu",
+        "osm_id": "('node', 764927442)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3085025,
+          27.7335107
+        ]
+      },
+      "properties": {
+        "name": "To Besi sihara",
+        "osm_id": "('node', 845503448)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3226211,
+          27.7069661
+        ]
+      },
+      "properties": {
+        "name": "Putali Sadak",
+        "osm_id": "('node', 1399507923)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.332886,
+          27.7038843
+        ]
+      },
+      "properties": {
+        "name": "maitidevi bus stop",
+        "osm_id": "('node', 1497159559)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2978068,
+          27.7248456
+        ]
+      },
+      "properties": {
+        "name": "Station 8",
+        "osm_id": "('node', 1497194467)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3569382,
+          27.7273703
+        ]
+      },
+      "properties": {
+        "name": "Bhrikuti Chok",
+        "osm_id": "('node', 1523307368)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3068971,
+          27.7191991
+        ]
+      },
+      "properties": {
+        "name": "Station 10",
+        "osm_id": "('node', 1622172127)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3361926,
+          27.6922923
+        ]
+      },
+      "properties": {
+        "name": "Eyeplex Mall Bus Stop",
+        "osm_id": "('node', 1845683513)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3146154,
+          27.7349404
+        ]
+      },
+      "properties": {
+        "name": "Gongabu Chowk",
+        "osm_id": "('node', 1875745723)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3308767,
+          27.7245941
+        ]
+      },
+      "properties": {
+        "name": "Station 13",
+        "osm_id": "('node', 1886633796)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3303697,
+          27.7169187
+        ]
+      },
+      "properties": {
+        "name": "Tangal Bus stop",
+        "osm_id": "('node', 1898593311)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3372283,
+          27.7399704
+        ]
+      },
+      "properties": {
+        "name": "Narayan Gopal Chowk",
+        "osm_id": "('node', 1945933025)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2985509,
+          27.6826476
+        ]
+      },
+      "properties": {
+        "name": "Kumari Club",
+        "osm_id": "('node', 1960744496)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3211982,
+          27.7356261
+        ]
+      },
+      "properties": {
+        "name": "Station 17",
+        "osm_id": "('node', 2077260194)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3174196,
+          27.7181961
+        ]
+      },
+      "properties": {
+        "name": "Station 18",
+        "osm_id": "('node', 2090601791)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3150735,
+          27.7171421
+        ]
+      },
+      "properties": {
+        "name": "Lainchowr Bus Station",
+        "osm_id": "('node', 2127168043)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3315778,
+          27.6811429
+        ]
+      },
+      "properties": {
+        "name": "tempo-micro last stop",
+        "osm_id": "('node', 2129636469)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.311271,
+          27.6947007
+        ]
+      },
+      "properties": {
+        "name": "Station 21",
+        "osm_id": "('node', 2165424725)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3145628,
+          27.6934425
+        ]
+      },
+      "properties": {
+        "name": "Station 22",
+        "osm_id": "('node', 2166417333)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2995431,
+          27.6982946
+        ]
+      },
+      "properties": {
+        "name": "Kalimati Bus Stop",
+        "osm_id": "('node', 2166427223)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3514564,
+          27.6755145
+        ]
+      },
+      "properties": {
+        "name": "Station 24",
+        "osm_id": "('node', 2249140882)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3541483,
+          27.6750818
+        ]
+      },
+      "properties": {
+        "name": "Station 25",
+        "osm_id": "('node', 2249140889)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2813459,
+          27.6953887
+        ]
+      },
+      "properties": {
+        "name": "Station 26",
+        "osm_id": "('node', 2858938377)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.33113,
+          27.72416
+        ]
+      },
+      "properties": {
+        "name": "Baluwatar Bus Stop",
+        "osm_id": "('node', 2968523086)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3465761,
+          27.7175155
+        ]
+      },
+      "properties": {
+        "name": "Station 28",
+        "osm_id": "('node', 3074566733)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3443989,
+          27.7106276
+        ]
+      },
+      "properties": {
+        "name": "Jaya Bageshwori",
+        "osm_id": "('node', 3074581508)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3478852,
+          27.7178774
+        ]
+      },
+      "properties": {
+        "name": "Station 30",
+        "osm_id": "('node', 3074584433)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3471102,
+          27.7180046
+        ]
+      },
+      "properties": {
+        "name": "Station 31",
+        "osm_id": "('node', 3074602191)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3166186,
+          27.7092826
+        ]
+      },
+      "properties": {
+        "name": "Kantipath",
+        "osm_id": "('node', 3322873041)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3493503,
+          27.6798724
+        ]
+      },
+      "properties": {
+        "name": "Koteshwar Bus Stop",
+        "osm_id": "('node', 3461553725)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3264159,
+          27.6911057
+        ]
+      },
+      "properties": {
+        "name": "Station 34",
+        "osm_id": "('node', 3461553726)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3325764,
+          27.7421779
+        ]
+      },
+      "properties": {
+        "name": "Basundhara Bus Stop",
+        "osm_id": "('node', 3766701674)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.294554,
+          27.7235413
+        ]
+      },
+      "properties": {
+        "name": "Dhungedhara",
+        "osm_id": "('node', 3806463148)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3497204,
+          27.6790415
+        ]
+      },
+      "properties": {
+        "name": "Koteshwar Bus Stop",
+        "osm_id": "('node', 4030822684)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3531429,
+          27.6956655
+        ]
+      },
+      "properties": {
+        "name": "Sinamangal",
+        "osm_id": "('node', 4109691391)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.32895,
+          27.6993514
+        ]
+      },
+      "properties": {
+        "name": "Nepal Yatayat Anamnagar",
+        "osm_id": "('node', 4135808094)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3328212,
+          27.7039253
+        ]
+      },
+      "properties": {
+        "name": "Maitidevi",
+        "osm_id": "('node', 4141131095)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3234849,
+          27.7005956
+        ]
+      },
+      "properties": {
+        "name": "Newplaza",
+        "osm_id": "('node', 4204194789)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3455249,
+          27.6923015
+        ]
+      },
+      "properties": {
+        "name": "तिनकुने",
+        "osm_id": "('node', 4206479489)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2939807,
+          27.7308707
+        ]
+      },
+      "properties": {
+        "name": "Kharibot Micro Station",
+        "osm_id": "('node', 4266695860)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3529611,
+          27.6754407
+        ]
+      },
+      "properties": {
+        "name": "Station 44",
+        "osm_id": "('node', 4275708292)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3651234,
+          27.7116683
+        ]
+      },
+      "properties": {
+        "name": "Station 45",
+        "osm_id": "('node', 4311377589)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3165765,
+          27.7025429
+        ]
+      },
+      "properties": {
+        "name": "Station 46",
+        "osm_id": "('node', 4366575209)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3505567,
+          27.6972036
+        ]
+      },
+      "properties": {
+        "name": "Station 47",
+        "osm_id": "('node', 4428730600)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2897532,
+          27.7129607
+        ]
+      },
+      "properties": {
+        "name": "Station 48",
+        "osm_id": "('node', 4539565993)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.342163,
+          27.6734413
+        ]
+      },
+      "properties": {
+        "name": "Station 49",
+        "osm_id": "('node', 4561899390)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3389673,
+          27.6783042
+        ]
+      },
+      "properties": {
+        "name": "Sarus Beauty Parlour And Cosmetic Training Center",
+        "osm_id": "('node', 4585338298)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3019049,
+          27.7366406
+        ]
+      },
+      "properties": {
+        "name": "Station 51",
+        "osm_id": "('node', 4607638798)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.345524,
+          27.6986119
+        ]
+      },
+      "properties": {
+        "name": "Station 52",
+        "osm_id": "('node', 4615652290)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3171184,
+          27.7276946
+        ]
+      },
+      "properties": {
+        "name": "Station 53",
+        "osm_id": "('node', 4671940789)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3054371,
+          27.7129627
+        ]
+      },
+      "properties": {
+        "name": "Station 54",
+        "osm_id": "('node', 4731419521)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3502938,
+          27.7191615
+        ]
+      },
+      "properties": {
+        "name": "Chuchepati",
+        "osm_id": "('node', 4784205922)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3603656,
+          27.6891853
+        ]
+      },
+      "properties": {
+        "name": "Pepsicola Chowk",
+        "osm_id": "('node', 4803483428)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3663548,
+          27.6967912
+        ]
+      },
+      "properties": {
+        "name": "Khahare Chowk, Pepsicola",
+        "osm_id": "('node', 4803502724)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3177572,
+          27.6903575
+        ]
+      },
+      "properties": {
+        "name": "Station 58",
+        "osm_id": "('node', 4821801221)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3187487,
+          27.7134011
+        ]
+      },
+      "properties": {
+        "name": "Station 59",
+        "osm_id": "('node', 4824360524)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.318208,
+          27.7192324
+        ]
+      },
+      "properties": {
+        "name": "Station 60",
+        "osm_id": "('node', 4834526521)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3260604,
+          27.7099805
+        ]
+      },
+      "properties": {
+        "name": "Kamalpokhari Bus Stop",
+        "osm_id": "('node', 4851758928)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3193479,
+          27.693971
+        ]
+      },
+      "properties": {
+        "name": "Station 62",
+        "osm_id": "('node', 4903081921)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3175552,
+          27.6900842
+        ]
+      },
+      "properties": {
+        "name": "Station 63",
+        "osm_id": "('node', 4903082021)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3348522,
+          27.6883306
+        ]
+      },
+      "properties": {
+        "name": "Station 64",
+        "osm_id": "('node', 4916056821)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.34229,
+          27.7349479
+        ]
+      },
+      "properties": {
+        "name": "Station 65",
+        "osm_id": "('node', 4920024521)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3146285,
+          27.7087545
+        ]
+      },
+      "properties": {
+        "name": "Station 66",
+        "osm_id": "('node', 4940227523)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3447142,
+          27.7069046
+        ]
+      },
+      "properties": {
+        "name": "Pingalsthan, Gaushala",
+        "osm_id": "('node', 5081406121)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3442753,
+          27.731947
+        ]
+      },
+      "properties": {
+        "name": "Dhumbaharai chock",
+        "osm_id": "('node', 5181221232)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.35107,
+          27.6754504
+        ]
+      },
+      "properties": {
+        "name": "Station 69",
+        "osm_id": "('node', 5183486523)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.342101,
+          27.6732928
+        ]
+      },
+      "properties": {
+        "name": "Station 70",
+        "osm_id": "('node', 5204346222)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2825515,
+          27.7072377
+        ]
+      },
+      "properties": {
+        "name": "Station 71",
+        "osm_id": "('node', 5362570123)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3357427,
+          27.6899702
+        ]
+      },
+      "properties": {
+        "name": "Baneshwar Bus Station",
+        "osm_id": "('node', 5367652205)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3461547,
+          27.7204885
+        ]
+      },
+      "properties": {
+        "name": "Station 73",
+        "osm_id": "('node', 5528676227)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3058547,
+          27.6968249
+        ]
+      },
+      "properties": {
+        "name": "Station 74",
+        "osm_id": "('node', 5538962121)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3560936,
+          27.7255766
+        ]
+      },
+      "properties": {
+        "name": "महङ्काल",
+        "osm_id": "('node', 5619165231)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.314516,
+          27.7064893
+        ]
+      },
+      "properties": {
+        "name": "Station 76",
+        "osm_id": "('node', 5720133821)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.304997,
+          27.7260406
+        ]
+      },
+      "properties": {
+        "name": "Balaju Chowk Bus Stop",
+        "osm_id": "('node', 5784633469)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3082196,
+          27.7185446
+        ]
+      },
+      "properties": {
+        "name": "Station 78",
+        "osm_id": "('node', 5864596986)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.331293,
+          27.7087535
+        ]
+      },
+      "properties": {
+        "name": "Mahanagar and Sajha Yatayat;Local Bus stand",
+        "osm_id": "('node', 5907660838)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2814445,
+          27.6990751
+        ]
+      },
+      "properties": {
+        "name": "Station 80",
+        "osm_id": "('node', 6052881691)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2817551,
+          27.7002299
+        ]
+      },
+      "properties": {
+        "name": "Station 81",
+        "osm_id": "('node', 6053557887)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3048394,
+          27.7169528
+        ]
+      },
+      "properties": {
+        "name": "Greenline Bus Stop",
+        "osm_id": "('node', 6100126497)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2814676,
+          27.6990324
+        ]
+      },
+      "properties": {
+        "name": "Station 83",
+        "osm_id": "('node', 6119569890)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2823352,
+          27.6920051
+        ]
+      },
+      "properties": {
+        "name": "Station 84",
+        "osm_id": "('node', 6440259386)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3125262,
+          27.7191973
+        ]
+      },
+      "properties": {
+        "name": "Station 85",
+        "osm_id": "('node', 6482645186)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3067864,
+          27.7178762
+        ]
+      },
+      "properties": {
+        "name": "Station 86",
+        "osm_id": "('node', 6945144593)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2843216,
+          27.6893207
+        ]
+      },
+      "properties": {
+        "name": "Station 87",
+        "osm_id": "('node', 7274254586)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3233339,
+          27.7007581
+        ]
+      },
+      "properties": {
+        "name": "New Plaza Stop",
+        "osm_id": "('node', 9412182417)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3249144,
+          27.7286529
+        ]
+      },
+      "properties": {
+        "name": "Station 89",
+        "osm_id": "('node', 9524374618)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3139181,
+          27.7033527
+        ]
+      },
+      "properties": {
+        "name": "Station 90",
+        "osm_id": "('node', 10228706017)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3313234,
+          27.7351123
+        ]
+      },
+      "properties": {
+        "name": "Teaching Hospital",
+        "osm_id": "('node', 10685761805)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.297446,
+          27.684259
+        ]
+      },
+      "properties": {
+        "name": "Balkhu",
+        "osm_id": "('node', 10736560774)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3031511,
+          27.7260707
+        ]
+      },
+      "properties": {
+        "name": "Station 93",
+        "osm_id": "('node', 10814739406)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3602385,
+          27.6888871
+        ]
+      },
+      "properties": {
+        "name": "Station 94",
+        "osm_id": "('node', 11072488905)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2965394,
+          27.6849089
+        ]
+      },
+      "properties": {
+        "name": "Station 95",
+        "osm_id": "('node', 11158532306)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3685461,
+          27.7270206
+        ]
+      },
+      "properties": {
+        "name": "Tinchuli",
+        "osm_id": "('node', 11962110670)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3628892,
+          27.7259504
+        ]
+      },
+      "properties": {
+        "name": "Ramhiti",
+        "osm_id": "('node', 11962120769)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3568315,
+          27.7242827
+        ]
+      },
+      "properties": {
+        "name": "Mahankal",
+        "osm_id": "('node', 11962120770)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3539447,
+          27.7221892
+        ]
+      },
+      "properties": {
+        "name": "Pani Tankey",
+        "osm_id": "('node', 11962125369)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3085466,
+          27.7186881
+        ]
+      },
+      "properties": {
+        "name": "Sauraha Tourist Bus",
+        "osm_id": "('node', 12832655801)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.346513,
+          27.6765844
+        ]
+      },
+      "properties": {
+        "name": "Bus to the East, Mechinagar",
+        "osm_id": "('node', 12846647143)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3309026,
+          27.7345467
+        ]
+      },
+      "properties": {
+        "name": "Station 102",
+        "osm_id": "('node', 12901879540)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3501477,
+          27.7061894
+        ]
+      },
+      "properties": {
+        "name": "Tilganga",
+        "osm_id": "('node', 12993759258)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.3604163,
+          27.7204977
+        ]
+      },
+      "properties": {
+        "name": "Boudha",
+        "osm_id": "('node', 13040382166)"
+      }
+    }
+  ]
+}

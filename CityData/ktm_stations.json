@@ -1,0 +1,846 @@
+{
+  "stations": [
+    {
+      "name": "Airport Bus Station",
+      "lat": 27.7006099,
+      "lng": 85.3537169,
+      "osm_id": "31147572"
+    },
+    {
+      "name": "Sorhakhutte",
+      "lat": 27.7188423,
+      "lng": 85.3095996,
+      "osm_id": "268116939"
+    },
+    {
+      "name": "Swayambu stop",
+      "lat": 27.716017,
+      "lng": 85.2835417,
+      "osm_id": "296344440"
+    },
+    {
+      "name": "Kupondol stop",
+      "lat": 27.6879843,
+      "lng": 85.3162249,
+      "osm_id": "670651214"
+    },
+    {
+      "name": "Jawalakhel",
+      "lat": 27.6732666,
+      "lng": 85.3135375,
+      "osm_id": "670654518"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6997042,
+      "lng": 85.3139878,
+      "osm_id": "724363694"
+    },
+    {
+      "name": "Sanepa",
+      "lat": 27.6845309,
+      "lng": 85.3018585,
+      "osm_id": "764927361"
+    },
+    {
+      "name": "Balkhu",
+      "lat": 27.6849132,
+      "lng": 85.2986117,
+      "osm_id": "764927442"
+    },
+    {
+      "name": "To Besi sihara",
+      "lat": 27.7335107,
+      "lng": 85.3085025,
+      "osm_id": "845503448"
+    },
+    {
+      "name": "TU Gate",
+      "lat": 27.6787869,
+      "lng": 85.2971844,
+      "osm_id": "913398284"
+    },
+    {
+      "name": "Panga Dobato",
+      "lat": 27.6747581,
+      "lng": 85.2804077,
+      "osm_id": "913398317"
+    },
+    {
+      "name": "Tinkune",
+      "lat": 27.6766823,
+      "lng": 85.2835298,
+      "osm_id": "913398439"
+    },
+    {
+      "name": "Sukedhara",
+      "lat": 27.7282299,
+      "lng": 85.3460335,
+      "osm_id": "1143907471"
+    },
+    {
+      "name": "Putali Sadak",
+      "lat": 27.7069661,
+      "lng": 85.3226211,
+      "osm_id": "1399507923"
+    },
+    {
+      "name": "Ekantakuna",
+      "lat": 27.6666354,
+      "lng": 85.3083104,
+      "osm_id": "1496573247"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6726494,
+      "lng": 85.3132419,
+      "osm_id": "1496573304"
+    },
+    {
+      "name": "Nakhu Dobato",
+      "lat": 27.6688752,
+      "lng": 85.3062936,
+      "osm_id": "1496627058"
+    },
+    {
+      "name": "maitidevi bus stop",
+      "lat": 27.7038843,
+      "lng": 85.332886,
+      "osm_id": "1497159559"
+    },
+    {
+      "name": "Sitapaila Stop",
+      "lat": 27.7074532,
+      "lng": 85.2824928,
+      "osm_id": "1497194463"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7248456,
+      "lng": 85.2978068,
+      "osm_id": "1497194467"
+    },
+    {
+      "name": "Bhrikuti Chok",
+      "lat": 27.7273703,
+      "lng": 85.3569382,
+      "osm_id": "1523307368"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7191991,
+      "lng": 85.3068971,
+      "osm_id": "1622172127"
+    },
+    {
+      "name": "Eyeplex Mall Bus Stop",
+      "lat": 27.6922923,
+      "lng": 85.3361926,
+      "osm_id": "1845683513"
+    },
+    {
+      "name": "Gongabu Chowk",
+      "lat": 27.7349404,
+      "lng": 85.3146154,
+      "osm_id": "1875745723"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7245941,
+      "lng": 85.3308767,
+      "osm_id": "1886633796"
+    },
+    {
+      "name": "kharibot bus stop",
+      "lat": 27.6703044,
+      "lng": 85.3381309,
+      "osm_id": "1892816724"
+    },
+    {
+      "name": "Tangal Bus stop",
+      "lat": 27.7169187,
+      "lng": 85.3303697,
+      "osm_id": "1898593311"
+    },
+    {
+      "name": "Narayan Gopal Chowk",
+      "lat": 27.7399704,
+      "lng": 85.3372283,
+      "osm_id": "1945933025"
+    },
+    {
+      "name": "Naya Bato",
+      "lat": 27.6761142,
+      "lng": 85.2938967,
+      "osm_id": "1960744390"
+    },
+    {
+      "name": "Kumari Club",
+      "lat": 27.6826476,
+      "lng": 85.2985509,
+      "osm_id": "1960744496"
+    },
+    {
+      "name": "Naya Bazar",
+      "lat": 27.6770776,
+      "lng": 85.2819463,
+      "osm_id": "1965646270"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7356261,
+      "lng": 85.3211982,
+      "osm_id": "2077260194"
+    },
+    {
+      "name": "Dhapasi Micro Stop",
+      "lat": 27.745806,
+      "lng": 85.327511,
+      "osm_id": "2078703766"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7181961,
+      "lng": 85.3174196,
+      "osm_id": "2090601791"
+    },
+    {
+      "name": "Lainchowr Bus Station",
+      "lat": 27.7171421,
+      "lng": 85.3150735,
+      "osm_id": "2127168043"
+    },
+    {
+      "name": "tempo-micro last stop",
+      "lat": 27.6811429,
+      "lng": 85.3315778,
+      "osm_id": "2129636469"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6947007,
+      "lng": 85.311271,
+      "osm_id": "2165424725"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6934425,
+      "lng": 85.3145628,
+      "osm_id": "2166417333"
+    },
+    {
+      "name": "Kalimati Bus Stop",
+      "lat": 27.6982946,
+      "lng": 85.2995431,
+      "osm_id": "2166427223"
+    },
+    {
+      "name": "\u0920\u0941\u0932\u094b \u092d\u0930\u094d\u092f\u093e\u0902\u0919",
+      "lat": 27.7197605,
+      "lng": 85.2869099,
+      "osm_id": "2207719957"
+    },
+    {
+      "name": "New Bus Park",
+      "lat": 27.6729035,
+      "lng": 85.3340263,
+      "osm_id": "2224261937"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6755145,
+      "lng": 85.3514564,
+      "osm_id": "2249140882"
+    },
+    {
+      "name": "Mandikhatar Stop",
+      "lat": 27.7362631,
+      "lng": 85.347674,
+      "osm_id": "2396022574"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6953887,
+      "lng": 85.2813459,
+      "osm_id": "2858938377"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6843335,
+      "lng": 85.3001006,
+      "osm_id": "2858938378"
+    },
+    {
+      "name": "Baluwatar Bus Stop",
+      "lat": 27.72416,
+      "lng": 85.33113,
+      "osm_id": "2968523086"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7175155,
+      "lng": 85.3465761,
+      "osm_id": "3074566733"
+    },
+    {
+      "name": "Jaya Bageshwori",
+      "lat": 27.7106276,
+      "lng": 85.3443989,
+      "osm_id": "3074581508"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7178774,
+      "lng": 85.3478852,
+      "osm_id": "3074584433"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7180046,
+      "lng": 85.3471102,
+      "osm_id": "3074602191"
+    },
+    {
+      "name": "Kantipath",
+      "lat": 27.7092826,
+      "lng": 85.3166186,
+      "osm_id": "3322873041"
+    },
+    {
+      "name": "Koteshwar Bus Stop",
+      "lat": 27.6798724,
+      "lng": 85.3493503,
+      "osm_id": "3461553725"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6911057,
+      "lng": 85.3264159,
+      "osm_id": "3461553726"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7221719,
+      "lng": 85.2769086,
+      "osm_id": "3487894529"
+    },
+    {
+      "name": "Basundhara Bus Stop",
+      "lat": 27.7421779,
+      "lng": 85.3325764,
+      "osm_id": "3766701674"
+    },
+    {
+      "name": "Dhungedhara",
+      "lat": 27.7235413,
+      "lng": 85.294554,
+      "osm_id": "3806463148"
+    },
+    {
+      "name": "Koteshwar Bus Stop",
+      "lat": 27.6790415,
+      "lng": 85.3497204,
+      "osm_id": "4030822684"
+    },
+    {
+      "name": "Sinamangal",
+      "lat": 27.6956655,
+      "lng": 85.3531429,
+      "osm_id": "4109691391"
+    },
+    {
+      "name": "Nepal Yatayat Anamnagar",
+      "lat": 27.6993514,
+      "lng": 85.32895,
+      "osm_id": "4135808094"
+    },
+    {
+      "name": "Maitidevi",
+      "lat": 27.7039253,
+      "lng": 85.3328212,
+      "osm_id": "4141131095"
+    },
+    {
+      "name": "Newplaza",
+      "lat": 27.7005956,
+      "lng": 85.3234849,
+      "osm_id": "4204194789"
+    },
+    {
+      "name": "\u0924\u093f\u0928\u0915\u0941\u0928\u0947",
+      "lat": 27.6923015,
+      "lng": 85.3455249,
+      "osm_id": "4206479489"
+    },
+    {
+      "name": "Kharibot Micro Station",
+      "lat": 27.7308707,
+      "lng": 85.2939807,
+      "osm_id": "4266695860"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7116683,
+      "lng": 85.3651234,
+      "osm_id": "4311377589"
+    },
+    {
+      "name": "Baluwapaati Chowk",
+      "lat": 27.7504508,
+      "lng": 85.317968,
+      "osm_id": "4325142495"
+    },
+    {
+      "name": "Soltidobato",
+      "lat": 27.7045119,
+      "lng": 85.2819731,
+      "osm_id": "4342984792"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7025429,
+      "lng": 85.3165765,
+      "osm_id": "4366575209"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6972036,
+      "lng": 85.3505567,
+      "osm_id": "4428730600"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.747042,
+      "lng": 85.3242737,
+      "osm_id": "4465559091"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.677947,
+      "lng": 85.3162155,
+      "osm_id": "4478271593"
+    },
+    {
+      "name": "Chovar Gate Bus Stop",
+      "lat": 27.6703694,
+      "lng": 85.2905385,
+      "osm_id": "4505901091"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7129607,
+      "lng": 85.2897532,
+      "osm_id": "4539565993"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6734413,
+      "lng": 85.342163,
+      "osm_id": "4561899390"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6708982,
+      "lng": 85.33973,
+      "osm_id": "4561910892"
+    },
+    {
+      "name": "Sarus Beauty Parlour And Cosmetic Training Center",
+      "lat": 27.6783042,
+      "lng": 85.3389673,
+      "osm_id": "4585338298"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7366406,
+      "lng": 85.3019049,
+      "osm_id": "4607638798"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6986119,
+      "lng": 85.345524,
+      "osm_id": "4615652290"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7276946,
+      "lng": 85.3171184,
+      "osm_id": "4671940789"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7129627,
+      "lng": 85.3054371,
+      "osm_id": "4731419521"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6761959,
+      "lng": 85.3158001,
+      "osm_id": "4766617731"
+    },
+    {
+      "name": "Chuchepati",
+      "lat": 27.7191615,
+      "lng": 85.3502938,
+      "osm_id": "4784205922"
+    },
+    {
+      "name": "Pepsicola Chowk",
+      "lat": 27.6891853,
+      "lng": 85.3603656,
+      "osm_id": "4803483428"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6827881,
+      "lng": 85.3021862,
+      "osm_id": "4808763721"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6903575,
+      "lng": 85.3177572,
+      "osm_id": "4821801221"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7134011,
+      "lng": 85.3187487,
+      "osm_id": "4824360524"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7192324,
+      "lng": 85.318208,
+      "osm_id": "4834526521"
+    },
+    {
+      "name": "Kamalpokhari Bus Stop",
+      "lat": 27.7099805,
+      "lng": 85.3260604,
+      "osm_id": "4851758928"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.693971,
+      "lng": 85.3193479,
+      "osm_id": "4903081921"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6900842,
+      "lng": 85.3175552,
+      "osm_id": "4903082021"
+    },
+    {
+      "name": "Krishnagalli Bus Stop",
+      "lat": 27.6810897,
+      "lng": 85.3176495,
+      "osm_id": "4903082022"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6807853,
+      "lng": 85.317403,
+      "osm_id": "4903082023"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6883306,
+      "lng": 85.3348522,
+      "osm_id": "4916056821"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7349479,
+      "lng": 85.34229,
+      "osm_id": "4920024521"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7087545,
+      "lng": 85.3146285,
+      "osm_id": "4940227523"
+    },
+    {
+      "name": "Pingalsthan, Gaushala",
+      "lat": 27.7069046,
+      "lng": 85.3447142,
+      "osm_id": "5081406121"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7335948,
+      "lng": 85.3476608,
+      "osm_id": "5086421321"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7213881,
+      "lng": 85.2799852,
+      "osm_id": "5109126723"
+    },
+    {
+      "name": "Dhumbaharai chock",
+      "lat": 27.731947,
+      "lng": 85.3442753,
+      "osm_id": "5181221232"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6754504,
+      "lng": 85.35107,
+      "osm_id": "5183486523"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6732928,
+      "lng": 85.342101,
+      "osm_id": "5204346222"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6739274,
+      "lng": 85.3141864,
+      "osm_id": "5300595236"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7072377,
+      "lng": 85.2825515,
+      "osm_id": "5362570123"
+    },
+    {
+      "name": "Baneshwar Bus Station",
+      "lat": 27.6899702,
+      "lng": 85.3357427,
+      "osm_id": "5367652205"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7204885,
+      "lng": 85.3461547,
+      "osm_id": "5528676227"
+    },
+    {
+      "name": "bustop",
+      "lat": 27.7298338,
+      "lng": 85.3551144,
+      "osm_id": "5529727021"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6968249,
+      "lng": 85.3058547,
+      "osm_id": "5538962121"
+    },
+    {
+      "name": "\u092e\u0939\u0919\u094d\u0915\u093e\u0932",
+      "lat": 27.7255766,
+      "lng": 85.3560936,
+      "osm_id": "5619165231"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7064893,
+      "lng": 85.314516,
+      "osm_id": "5720133821"
+    },
+    {
+      "name": "Balaju Chowk Bus Stop",
+      "lat": 27.7260406,
+      "lng": 85.304997,
+      "osm_id": "5784633469"
+    },
+    {
+      "name": "Kalanki Long Distance Bus-stop",
+      "lat": 27.6929997,
+      "lng": 85.2807811,
+      "osm_id": "5821878253"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7185446,
+      "lng": 85.3082196,
+      "osm_id": "5864596986"
+    },
+    {
+      "name": "Mahanagar and Sajha Yatayat;Local Bus stand",
+      "lat": 27.7087535,
+      "lng": 85.331293,
+      "osm_id": "5907660838"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6990751,
+      "lng": 85.2814445,
+      "osm_id": "6052881691"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7002299,
+      "lng": 85.2817551,
+      "osm_id": "6053557887"
+    },
+    {
+      "name": "Greenline Bus Stop",
+      "lat": 27.7169528,
+      "lng": 85.3048394,
+      "osm_id": "6100126497"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6990324,
+      "lng": 85.2814676,
+      "osm_id": "6119569890"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7440965,
+      "lng": 85.3003106,
+      "osm_id": "6379886785"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6920051,
+      "lng": 85.2823352,
+      "osm_id": "6440259386"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7191973,
+      "lng": 85.3125262,
+      "osm_id": "6482645186"
+    },
+    {
+      "name": "Shahenshah Micro Bus Stop",
+      "lat": 27.7407558,
+      "lng": 85.3269269,
+      "osm_id": "6585014732"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7178762,
+      "lng": 85.3067864,
+      "osm_id": "6945144593"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6621751,
+      "lng": 85.3171035,
+      "osm_id": "7076752192"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6893207,
+      "lng": 85.2843216,
+      "osm_id": "7274254586"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7449232,
+      "lng": 85.307553,
+      "osm_id": "7658767485"
+    },
+    {
+      "name": "New Plaza Stop",
+      "lat": 27.7007581,
+      "lng": 85.3233339,
+      "osm_id": "9412182417"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7286529,
+      "lng": 85.3249144,
+      "osm_id": "9524374618"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6696067,
+      "lng": 85.2875627,
+      "osm_id": "9801832406"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7033527,
+      "lng": 85.3139181,
+      "osm_id": "10228706017"
+    },
+    {
+      "name": "Teaching Hospital",
+      "lat": 27.7351123,
+      "lng": 85.3313234,
+      "osm_id": "10685761805"
+    },
+    {
+      "name": "Balkhu",
+      "lat": 27.684259,
+      "lng": 85.297446,
+      "osm_id": "10736560774"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7260707,
+      "lng": 85.3031511,
+      "osm_id": "10814739406"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6888871,
+      "lng": 85.3602385,
+      "osm_id": "11072488905"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.6849089,
+      "lng": 85.2965394,
+      "osm_id": "11158532306"
+    },
+    {
+      "name": "Mahankal",
+      "lat": 27.7242827,
+      "lng": 85.3568315,
+      "osm_id": "11962120770"
+    },
+    {
+      "name": "Pani Tankey",
+      "lat": 27.7221892,
+      "lng": 85.3539447,
+      "osm_id": "11962125369"
+    },
+    {
+      "name": "Sauraha Tourist Bus",
+      "lat": 27.7186881,
+      "lng": 85.3085466,
+      "osm_id": "12832655801"
+    },
+    {
+      "name": "Bus to the East, Mechinagar",
+      "lat": 27.6765844,
+      "lng": 85.346513,
+      "osm_id": "12846647143"
+    },
+    {
+      "name": "Bus Stop",
+      "lat": 27.7345467,
+      "lng": 85.3309026,
+      "osm_id": "12901879540"
+    },
+    {
+      "name": "Tilganga",
+      "lat": 27.7061894,
+      "lng": 85.3501477,
+      "osm_id": "12993759258"
+    },
+    {
+      "name": "Boudha",
+      "lat": 27.7204977,
+      "lng": 85.3604163,
+      "osm_id": "13040382166"
+    }
+  ],
+  "city": "kathmandu",
+  "count": 140
+}
