@@ -511,8 +511,8 @@
             <!-- Basemap Selector -->
             <div class="city-selector">
                 <select id="basemap-selector" onchange="changeBasemap(this.value)">
-                    <option value="dark">Carto Dark (Default)</option>
-                    <option value="light">Carto Light</option>
+                    <option value="dark">Dark Gray (Default)</option>
+                    <option value="light">Light Gray</option>
                     <option value="osm">OpenStreetMap</option>
                     <option value="satellite">Satellite (Esri)</option>
                 </select>
@@ -595,8 +595,11 @@
         let spiderLegs = 5; // Number of closest stations to find (1-8)
         
         // API Configuration - works for both local development and Heroku
-        const API_BASE_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') 
-            ? 'http://localhost:8080' 
+        // 8080 collides with EnterpriseDB/pgAdmin's Apache on Windows, which answers
+        // 404 and makes walking mode look broken. Override with ?api=<port> if needed.
+        const API_PORT = new URLSearchParams(window.location.search).get('api') || '8081';
+        const API_BASE_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+            ? `http://localhost:${API_PORT}`
             : window.location.origin;
 
         logger.log('🌐 API Base URL:', API_BASE_URL);
@@ -850,11 +853,7 @@
                 }).addTo(map);
                 
                 // Add tile layer
-                currentBasemapLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-                    subdomains: 'abcd',
-                    maxZoom: 20
-                }).addTo(map);
+                currentBasemapLayer = makeBasemap('dark').addTo(map);
                 
                 // Initialize layer groups
                 linesLayer = L.layerGroup().addTo(map);
@@ -865,6 +864,7 @@
                 
                 // Improved movement handling for different calculation modes
                 let isMoving = false;
+                let euclideanFrame = null;
                 
                 function handleMapMovement() {
                     isMoving = true;
@@ -897,14 +897,16 @@
                             }, 100); // Further reduced from 150ms to 100ms for ultra-responsive feel
                         }
                     } else {
-                        // EUCLIDEAN MODE: Calculate immediately on the fly for smooth real-time effect
-                        const center = map.getCenter();
-                        updateClosestStationsWithCenter(center);
-                        
-                        // Very short timeout just to prevent excessive calculations during rapid movement
-                        moveTimeout = setTimeout(() => {
-                            isMoving = false;
-                        }, 10); // Minimal delay, just for state management
+                        // EUCLIDEAN MODE: recalculate on the fly, but at most once per frame.
+                        // 'move' fires far more often than the browser paints, and every call
+                        // rebuilds all the lines, markers and tooltips.
+                        if (!euclideanFrame) {
+                            euclideanFrame = requestAnimationFrame(() => {
+                                euclideanFrame = null;
+                                isMoving = false;
+                                if (map) updateClosestStationsWithCenter(map.getCenter());
+                            });
+                        }
                     }
                 }
                 
@@ -1201,7 +1203,7 @@
                 
                 // Check if already loading - if so, we're replacing an in-progress calculation
                 if (isLoading) {
-                    console.log(`🔄 Replacing in-progress OSM calculation with new one (${thisCalculationId})`);
+                    logger.log(`🔄 Replacing in-progress OSM calculation with new one (${thisCalculationId})`);
                 }
                 
                 // Set loading state immediately
@@ -1230,31 +1232,35 @@
                 try {
                     // Early cancellation check
                     if (thisCalculationId !== currentCalculationId) {
-                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled before starting`);
+                        logger.log(`⏭️ OSM calculation ${thisCalculationId} cancelled before starting`);
                         return;
                     }
                     
                     // Pre-filter to nearby stations for performance
                     const nearbyStations = getStationsInRadius(center, stations, 10000);
-                    console.log(`🗺️ OSM mode: Processing ${nearbyStations.length} nearby stations`);
+                    logger.log(`🗺️ OSM mode: Processing ${nearbyStations.length} nearby stations`);
                     
                     closestStations = await calculateOSMDistances(center, nearbyStations, thisCalculationId);
+                    document.getElementById('network-label').textContent = 'Walking Network';
                     
                     // Final cancellation check after async operation
                     if (thisCalculationId !== currentCalculationId) {
-                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled after completion`);
+                        logger.log(`⏭️ OSM calculation ${thisCalculationId} cancelled after completion`);
                         return;
                     }
                     
                 } catch (error) {
                     // Only handle error if this calculation is still current
                     if (thisCalculationId !== currentCalculationId) {
-                        console.log(`⏭️ OSM calculation ${thisCalculationId} cancelled during error`);
+                        logger.log(`⏭️ OSM calculation ${thisCalculationId} cancelled during error`);
                         return;
                     }
                     
                     console.error('OSM calculation failed, falling back to Euclidean:', error);
                     closestStations = calculateEuclideanDistancesWithCache(center);
+                    // Say so - otherwise the fallback silently draws straight lines that
+                    // look like a broken walking mode rather than an unreachable backend.
+                    document.getElementById('network-label').textContent = 'Walking Network (routing offline)';
                     
                 } finally {
                     // Only cleanup if this is still the current calculation
@@ -1276,7 +1282,7 @@
                 
                 // Calculate distances (fast, no async)
                 closestStations = calculateEuclideanDistancesWithCache(center);
-                console.log(`📏 Euclidean mode - found ${closestStations.length} stations`);
+                logger.log(`📏 Euclidean mode - found ${closestStations.length} stations`);
             }
 
             // Validate results
@@ -1287,7 +1293,7 @@
 
             // Final cancellation check before rendering
             if (thisCalculationId !== currentCalculationId) {
-                console.log(`⏭️ Calculation ${thisCalculationId} cancelled before rendering`);
+                logger.log(`⏭️ Calculation ${thisCalculationId} cancelled before rendering`);
                 return;
             }
 
@@ -1301,14 +1307,7 @@
             }
 
             // RENDER RESULTS
-            console.log(`✅ Rendering results for calculation ${thisCalculationId}`);
-            console.log(`📊 Drawing spider web from center: ${center.lat.toFixed(6)}, ${center.lng.toFixed(6)}`);
-            console.log(`🗂️ Closest stations to render:`, closestStations.map(s => ({
-                name: s.name,
-                lat: s.lat,
-                lng: s.lng,
-                distance: Math.round(s.distance)
-            })));
+            logger.log(`✅ Rendering ${closestStations.length} stations for calculation ${thisCalculationId}`);
 
             // Clear old routes and prepare for new ones
             linesLayer.clearLayers();
@@ -1328,7 +1327,7 @@
                 
                 // Draw route or straight line based on mode and data availability
                 if (useOSMNetwork && station.route && station.route.length > 0) {
-                    console.log(`🔍 Checking route for ${station.name}:`, {
+                    logger.log(`🔍 Checking route for ${station.name}:`, {
                         hasRoute: !!station.route,
                         routeLength: station.route.length,
                         firstPoint: station.route[0],
@@ -1342,16 +1341,16 @@
                             isNaN(point[0]) || isNaN(point[1]) ||
                             point[0] === 0 || point[1] === 0 ||
                             Math.abs(point[0]) > 90 || Math.abs(point[1]) > 180) {
-                            console.warn(`⚠️ Invalid OSM route point filtered:`, point);
+                            logger.warn(`⚠️ Invalid OSM route point filtered:`, point);
                             return false;
                         }
                         return true;
                     });
                     
-                    console.log(`✅ Valid route points: ${validRoute.length} out of ${station.route.length}`);
+                    logger.log(`✅ Valid route points: ${validRoute.length} out of ${station.route.length}`);
                     
                     if (validRoute.length > 1) {
-                        console.log(`🛣️ Drawing OSM route for ${station.name}: ${validRoute.length} valid points`);
+                        logger.log(`🛣️ Drawing OSM route for ${station.name}: ${validRoute.length} valid points`);
                         L.polyline(validRoute, { 
                             color: '#ed8936', 
                             weight: 3, 
@@ -1359,9 +1358,9 @@
                             dashArray: '5, 5'  // Dashed line for OSM routes
                         }).addTo(linesLayer);
                     } else {
-                        console.warn(`⚠️ OSM route for ${station.name} has no valid points, drawing straight line`);
+                        logger.warn(`⚠️ OSM route for ${station.name} has no valid points, drawing straight line`);
                         // Fallback to straight line
-                        console.log(`📏 Fallback line: center [${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)}] → station [${station.lat.toFixed(6)}, ${station.lng.toFixed(6)}]`);
+                        logger.log(`📏 Fallback line: center [${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)}] → station [${station.lat.toFixed(6)}, ${station.lng.toFixed(6)}]`);
                         L.polyline([preciseCenter, stationLatLng], { 
                             color: '#ed8936', 
                             weight: 2, 
@@ -1370,7 +1369,6 @@
                     }
                 } else {
                     // Draw straight line (Euclidean or fallback)
-                    console.log(`� Drawing straight line for ${station.name}: center [${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)}] → station [${station.lat.toFixed(6)}, ${station.lng.toFixed(6)}]`);
                     L.polyline([preciseCenter, stationLatLng], { 
                         color: '#ed8936', 
                         weight: 2, 
@@ -1393,34 +1391,27 @@
                 }).bindPopup(`<b>${station.name}</b><br>Distance: ${Math.round(station.distance)}m`).addTo(highlightedStationsLayer);
             });
             
-            console.log(`🎯 Successfully rendered ${closestStations.length} stations for calculation ${thisCalculationId}`);
+            logger.log(`🎯 Successfully rendered ${closestStations.length} stations for calculation ${thisCalculationId}`);
         }
 
         function updateCenterMarker(center) {
-            // Remove existing center marker
-            if (centerMarker) {
-                map.removeLayer(centerMarker);
-                centerMarker = null;
-            }
-
-            // Ensure center coordinates are properly rounded to prevent floating point precision issues
             const preciseCenter = L.latLng(center.lat, center.lng);
 
-            // Use CSS flexbox centering for perfect alignment
-            const centerIcon = L.divIcon({
-                className: 'center-crosshair',
-                html: '<b>+</b>',
-                iconSize: [24, 24],
-                iconAnchor: [12, 12] // Now properly centered with CSS flexbox
-            });
-            centerMarker = L.marker(preciseCenter, { icon: centerIcon, interactive: false, zIndexOffset: 1000 }).addTo(map);
-            
-            // Store the calculation ID this marker belongs to for debugging
+            // Move the existing marker instead of rebuilding it - this runs on every
+            // map move, and tearing down the divIcon each frame is what made panning stutter.
             if (centerMarker) {
-                centerMarker._calculationId = currentCalculationId;
+                centerMarker.setLatLng(preciseCenter);
+            } else {
+                const centerIcon = L.divIcon({
+                    className: 'center-crosshair',
+                    html: '<b>+</b>',
+                    iconSize: [24, 24],
+                    iconAnchor: [12, 12] // Now properly centered with CSS flexbox
+                });
+                centerMarker = L.marker(preciseCenter, { icon: centerIcon, interactive: false, zIndexOffset: 1000 }).addTo(map);
             }
-            
-            console.log(`📍 Center marker updated to: ${preciseCenter.lat.toFixed(6)}, ${preciseCenter.lng.toFixed(6)} (calc ID: ${currentCalculationId})`);
+
+            centerMarker._calculationId = currentCalculationId;
         }
         
         // --- Distance Calculation Functions ---
@@ -1541,7 +1532,7 @@
                 
                 // Check if calculation is still current after network request
                 if (calculationId && calculationId !== currentCalculationId) {
-                    console.log(`⏭️ OSM calculation ${calculationId} cancelled after network request`);
+                    logger.log(`⏭️ OSM calculation ${calculationId} cancelled after network request`);
                     throw new Error('Calculation cancelled');
                 }
                 
@@ -1552,13 +1543,13 @@
                 }
                 
                 const data = await response.json();
-                console.log('✅ API Response received:', data);
+                logger.log('✅ API Response received:', data);
                 const rawResult = data.stations || [];
-                console.log(`📊 Received ${rawResult.length} stations from API`);
+                logger.log(`📊 Received ${rawResult.length} stations from API`);
                 
                 // Log first station to debug route structure
                 if (rawResult.length > 0) {
-                    console.log('🔍 First station structure:', {
+                    logger.log('🔍 First station structure:', {
                         name: rawResult[0].name,
                         hasRoute: !!rawResult[0].route,
                         routeLength: rawResult[0].route ? rawResult[0].route.length : 0,
@@ -1570,7 +1561,7 @@
                 const result = rawResult.map(station => {
                     // Validate station coordinates
                     if (!isValidStation(station)) {
-                        console.warn(`⚠️ OSM response contains invalid station:`, station.name);
+                        logger.warn(`⚠️ OSM response contains invalid station:`, station.name);
                         return null;
                     }
                     
@@ -1653,39 +1644,43 @@
             }
         }
 
-        function changeBasemap(style) {
-            if (!map || !currentBasemapLayer) return;
-            
-            map.removeLayer(currentBasemapLayer);
-            
-            let url = '';
-            let attrib = '';
-            
+        // CARTO watermarks keyless tiles now, so the grey canvases come from Esri.
+        // Esri splits them into a base and a labels overlay, hence the layerGroup.
+        function makeBasemap(style) {
+            const esri = 'https://services.arcgisonline.com/ArcGIS/rest/services/';
+            const esriAttrib = 'Tiles &copy; Esri';
+            const esriOpts = { attribution: esriAttrib, maxZoom: 20, maxNativeZoom: 16 };
+            const canvas = (name) => L.layerGroup([
+                L.tileLayer(esri + 'Canvas/World_' + name + '_Gray_Base/MapServer/tile/{z}/{y}/{x}', esriOpts),
+                L.tileLayer(esri + 'Canvas/World_' + name + '_Gray_Reference/MapServer/tile/{z}/{y}/{x}', esriOpts)
+            ]);
+
             switch(style) {
                 case 'light':
-                    url = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
-                    attrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
-                    break;
+                    return canvas('Light');
                 case 'osm':
-                    url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-                    attrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-                    break;
+                    return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                        subdomains: 'abc',
+                        maxZoom: 19
+                    });
                 case 'satellite':
-                    url = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
-                    attrib = 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
-                    break;
+                    return L.tileLayer(esri + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+                        maxZoom: 20
+                    });
                 case 'dark':
                 default:
-                    url = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
-                    attrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+                    return canvas('Dark');
             }
-            
-            currentBasemapLayer = L.tileLayer(url, {
-                attribution: attrib,
-                subdomains: style === 'satellite' ? [] : 'abcd',
-                maxZoom: 20
-            }).addTo(map);
-            
+        }
+
+        function changeBasemap(style) {
+            if (!map || !currentBasemapLayer) return;
+
+            map.removeLayer(currentBasemapLayer);
+            currentBasemapLayer = makeBasemap(style).addTo(map);
+
             // Ensure lines and markers are on top
             if (linesLayer) linesLayer.bringToFront();
             if (highlightedStationsLayer) highlightedStationsLayer.bringToFront();
@@ -1802,7 +1797,7 @@
                 // Check cache first
                 const cached = euclideanCache.get(centerLat, centerLng);
                 if (cached) {
-                    console.log('Using cached Euclidean distance calculation');
+                    logger.log('Using cached Euclidean distance calculation');
                     return cached;
                 }
                 
@@ -1810,7 +1805,7 @@
                 const nearbyStations = getStationsInRadius(center, stations, maxRadius);
                 
                 if (nearbyStations.length === 0) {
-                    console.warn('No nearby stations found, using all stations');
+                    logger.warn('No nearby stations found, using all stations');
                     // Fallback to all stations if filtering returns empty
                     const fallbackResults = calculateEuclideanDistances(center, stations);
                     fallbackResults.sort((a, b) => a.distance - b.distance);
