@@ -660,8 +660,8 @@ if __name__ == '__main__':
     else:
         logger.error("Failed to load NetworKit graph - service may not function properly")
     
-    # Get port from environment variable or default to 8080
-    port = int(os.environ.get('PORT', 8080))
+    # Get port from environment variable or default to 8081 (8080 is often taken on Windows)
+    port = int(os.environ.get("PORT", 8081))
     
     logger.info(f"Starting Flask server on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False)
